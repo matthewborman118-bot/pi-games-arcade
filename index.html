@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Pi Games Arcade</title>
+<style>
+  :root {
+    --bg: #0f1115;
+    --panel: #171a21;
+    --panel-hi: #1f2430;
+    --text: #f2f3f5;
+    --text-dim: #9aa1ad;
+    --accent: #ff9f43;
+    --accent-2: #4fd1c5;
+    --border: #2a2f3a;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  body {
+    min-height: 100vh;
+    padding: 28px 16px 48px;
+  }
+  header {
+    max-width: 900px;
+    margin: 0 auto 28px;
+    text-align: center;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    margin: 0 0 6px;
+    letter-spacing: 0.5px;
+  }
+  header h1 span {
+    color: var(--accent);
+  }
+  header p {
+    color: var(--text-dim);
+    margin: 0;
+    font-size: 0.95rem;
+  }
+  .grid {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 16px;
+  }
+  .card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.15s ease, border-color 0.15s ease;
+  }
+  .card:active {
+    transform: scale(0.98);
+  }
+  .thumb {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.6rem;
+    background: linear-gradient(135deg, var(--panel-hi), var(--panel));
+    border-bottom: 1px solid var(--border);
+  }
+  .card-body {
+    padding: 14px 16px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+  }
+  .card-body h2 {
+    margin: 0;
+    font-size: 1.1rem;
+  }
+  .card-body p {
+    margin: 0;
+    color: var(--text-dim);
+    font-size: 0.85rem;
+    line-height: 1.35;
+    flex: 1;
+  }
+  .play-btn {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #101216;
+    background: var(--accent);
+    font-weight: 700;
+    padding: 10px 14px;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    margin-top: 4px;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .play-btn:active {
+    filter: brightness(0.92);
+  }
+  footer {
+    max-width: 900px;
+    margin: 32px auto 0;
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 0.78rem;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #0f1115;
+      --panel: #171a21;
+      --panel-hi: #1f2430;
+      --text: #f2f3f5;
+      --text-dim: #9aa1ad;
+      --border: #2a2f3a;
+    }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Pi Games <span>Arcade</span></h1>
+    <p>Homemade games, playable right in your browser. Tap a card to play.</p>
+  </header>
+
+  <main class="grid">
+    <div class="card">
+      <div class="thumb">🐦</div>
+      <div class="card-body">
+        <h2>Flappy Bird</h2>
+        <p>Tap to flap and fly through the pipes. Classic one-button arcade action.</p>
+        <a class="play-btn" href="flappybird/index.html">Play</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="thumb">🚀</div>
+      <div class="card-body">
+        <h2>Jetpack</h2>
+        <p>Hold to thrust, release to fall. Dodge lasers and missiles, grab coins.</p>
+        <a class="play-btn" href="jetpack/index.html">Play</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="thumb">🏁</div>
+      <div class="card-body">
+        <h2>Coastline 86</h2>
+        <p>Procedural coastal racer with on-screen steering. Kids + Assist or full Adults mode.</p>
+        <a class="play-btn" href="coastline86/index.html">Play</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="thumb">🛞</div>
+      <div class="card-body">
+        <h2>Happy Wheels Clone</h2>
+        <p>Ragdoll physics prototype. Drive, lean, and try not to wipe out.</p>
+        <a class="play-btn" href="happywheels/index.html">Play</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    Built with Pygame + pygbag &middot; runs entirely in your browser, no install needed
+  </footer>
+</body>
+</html>
