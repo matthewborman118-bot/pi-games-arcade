@@ -57,6 +57,14 @@
       "file": "packs/blue-thunder.msupack",
       "preview": "packs/blue-thunder.png",
       "sha256": "43be19346ab4ef4fa82b77b3b28e6d7bef2cee73343366176e5f14d405a9d0d1"
+    },
+    {
+      "id": "dino-dozer",
+      "name": "Dino Dozer",
+      "description": "A friendly T. rex drives a little loader, scoops colorful blocks, and accidentally builds a wobbly tower on its hard hat.",
+      "file": "packs/dino-dozer.msupack",
+      "preview": "packs/dino-dozer.png",
+      "sha256": "b1c91c051d9f200665e26dddd01f0c006befb66494b919b395ce38eac4a30ced"
     }
   ]
 }
