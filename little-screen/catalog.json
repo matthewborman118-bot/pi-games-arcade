@@ -3,28 +3,12 @@
   "github": "https://github.com/matthewborman118-bot/pi-games-arcade/tree/gh-pages/little-screen",
   "animations": [
     {
-      "id": "happy-hauler",
-      "name": "Happy Hauler",
-      "description": "A big grin, a hearty laugh, and eyes that smile along. Our original rusty Dodge, full of life.",
-      "file": "packs/happy-hauler.msupack",
-      "preview": "packs/happy-hauler.png",
-      "sha256": "c0fae7b57abdaa28cbfcbbc40af43c751cf34e1e6b03d098e3623ed90d15c98e"
-    },
-    {
       "id": "little-chuckle",
       "name": "Little Chuckle",
       "description": "A gentle blink and a little chuckle. An easygoing companion for a quieter corner.",
       "file": "packs/little-chuckle.msupack",
       "preview": "packs/little-chuckle.png",
       "sha256": "0a25cd77b0f3fd1d73a78ea59827106b99a88ff626ed07a42ca8b9cad725475d"
-    },
-    {
-      "id": "easygoing-dodge",
-      "name": "Easygoing Dodge",
-      "description": "Curious eyes, a familiar smile, and a soft idle. The first version that started it all.",
-      "file": "packs/easygoing-dodge.msupack",
-      "preview": "packs/easygoing-dodge.png",
-      "sha256": "ed2123d9c73236323763ac67cf059d212f3ac36f8750b11ff1fba27d5fef3cdb"
     },
     {
       "id": "midnight-octopus",
@@ -57,6 +41,14 @@
       "file": "packs/trash-titan.msupack",
       "preview": "packs/trash-titan.png",
       "sha256": "e554f5cfdd78e277796fd3caff6d6813bba15cc1d44d909d3b5e9457d9f114cf"
+    },
+    {
+      "id": "screen-ripper",
+      "name": "Screen Ripper",
+      "description": "Four hooked claws tear open the display, revealing a giant cyclops that lunges through the glowing split.",
+      "file": "packs/screen-ripper.msupack",
+      "preview": "packs/screen-ripper.png",
+      "sha256": "15f0d54169646680e0b0a270638c3bd124600bd5a90084b68260d3056cd9fa95"
     }
   ]
 }

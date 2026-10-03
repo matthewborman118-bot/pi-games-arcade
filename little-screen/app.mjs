@@ -26,7 +26,7 @@ function renderCards(){
   const article=document.createElement('article');article.className='card'+(state.selected===item?' selected':'');
   const img=document.createElement('img');img.className='card-image';img.alt=item.name+' animation preview';img.src=item.preview;img.width=160;img.height=80;
   const content=document.createElement('div');content.className='card-content';
-  const badge=document.createElement('span');badge.className='badge';badge.textContent=item.imported?'Your own creation':'The truck collection';
+  const badge=document.createElement('span');badge.className='badge';badge.textContent=item.imported?'Your own creation':'The animation collection';
   const title=document.createElement('h3');title.textContent=item.name;
   const description=document.createElement('p');description.textContent=item.description;
   const button=document.createElement('button');button.textContent=state.selected===item?'Selected ✓':'Meet this companion →';button.disabled=state.busy;button.setAttribute('aria-label','Select '+item.name);button.onclick=()=>select(item);
