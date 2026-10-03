@@ -86,3 +86,5 @@ async function init(){
  }catch(error){$('cards').textContent=error.message;message('Run this website from HTTPS or a local web server, rather than opening its files directly.',true);}
 }
 init();
+
+document.getElementById('pixels').onclick=e=>{const pixelated=document.body.classList.toggle('show-pixels');e.currentTarget.setAttribute('aria-pressed',String(pixelated));e.currentTarget.textContent=pixelated?'Smooth edges':'Show pixels'};
