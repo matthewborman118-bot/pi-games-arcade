@@ -33,6 +33,14 @@
       "file": "packs/midnight-octopus.msupack",
       "preview": "packs/midnight-octopus.png",
       "sha256": "bb6b27581f94dd2e1c858af738acaa46458ea345af6fdf94bd3bd8b48cef6948"
+    },
+    {
+      "id": "bone-rattle",
+      "name": "Bone Rattle",
+      "description": "A neon-stage skeleton drummer with swinging sticks, a bouncing jaw, glowing eyes, and a double cymbal crash.",
+      "file": "packs/bone-rattle.msupack",
+      "preview": "packs/bone-rattle.png",
+      "sha256": "b3ace81a69b1e42c2dedc13d0645f2c18ac919b468f83dd1b8117bcb3069f438"
     }
   ]
 }
