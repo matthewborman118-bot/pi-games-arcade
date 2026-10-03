@@ -49,6 +49,14 @@
       "file": "packs/blown-orange.msupack",
       "preview": "packs/blown-orange.png",
       "sha256": "cea5e5ae1143c9832d5a2143433b90b423e217e20cbc010b99374fdca41fe525"
+    },
+    {
+      "id": "trash-titan",
+      "name": "Trash Titan",
+      "description": "A monster garbage truck with giant tires, chomping teeth, a trash-can snatching tongue, bouncing garbage, and green exhaust.",
+      "file": "packs/trash-titan.msupack",
+      "preview": "packs/trash-titan.png",
+      "sha256": "e554f5cfdd78e277796fd3caff6d6813bba15cc1d44d909d3b5e9457d9f114cf"
     }
   ]
 }
