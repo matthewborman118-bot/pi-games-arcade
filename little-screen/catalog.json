@@ -41,6 +41,14 @@
       "file": "packs/bone-rattle.msupack",
       "preview": "packs/bone-rattle.png",
       "sha256": "b3ace81a69b1e42c2dedc13d0645f2c18ac919b468f83dd1b8117bcb3069f438"
+    },
+    {
+      "id": "blown-orange",
+      "name": "Blown Orange",
+      "description": "A 1970 Dodge Challenger with a huge chrome supercharger, spinning pulleys, expressive eyes, and exhaust-flame bursts.",
+      "file": "packs/blown-orange.msupack",
+      "preview": "packs/blown-orange.png",
+      "sha256": "cea5e5ae1143c9832d5a2143433b90b423e217e20cbc010b99374fdca41fe525"
     }
   ]
 }
