@@ -25,6 +25,14 @@
       "file": "packs/easygoing-dodge.msupack",
       "preview": "packs/easygoing-dodge.png",
       "sha256": "ed2123d9c73236323763ac67cf059d212f3ac36f8750b11ff1fba27d5fef3cdb"
+    },
+    {
+      "id": "midnight-octopus",
+      "name": "Midnight Octopus",
+      "description": "A mellow neon octopus rolls a joint, takes a puff, and sends a smoke ring drifting past its curling arms.",
+      "file": "packs/midnight-octopus.msupack",
+      "preview": "packs/midnight-octopus.png",
+      "sha256": "bb6b27581f94dd2e1c858af738acaa46458ea345af6fdf94bd3bd8b48cef6948"
     }
   ]
 }
