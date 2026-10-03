@@ -49,6 +49,14 @@
       "file": "packs/screen-ripper.msupack",
       "preview": "packs/screen-ripper.png",
       "sha256": "15f0d54169646680e0b0a270638c3bd124600bd5a90084b68260d3056cd9fa95"
+    },
+    {
+      "id": "blue-thunder",
+      "name": "Blue Thunder",
+      "description": "A cheerful blue Dodge-inspired monster truck jumps over three toy cars, spins its wheels, and lands with a happy suspension bounce.",
+      "file": "packs/blue-thunder.msupack",
+      "preview": "packs/blue-thunder.png",
+      "sha256": "43be19346ab4ef4fa82b77b3b28e6d7bef2cee73343366176e5f14d405a9d0d1"
     }
   ]
 }
