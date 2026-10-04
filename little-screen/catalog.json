@@ -65,6 +65,14 @@
       "file": "packs/dino-dozer.msupack",
       "preview": "packs/dino-dozer.png",
       "sha256": "b1c91c051d9f200665e26dddd01f0c006befb66494b919b395ce38eac4a30ced"
+    },
+    {
+      "id": "mopar-or-no-car",
+      "name": "Mopar or No Car",
+      "description": "A Plum Crazy purple 1970 Dodge Charger lights up its rear tire with spinning chrome, rolling smoke, and a huge supercharger.",
+      "file": "packs/mopar-or-no-car.msupack",
+      "preview": "packs/mopar-or-no-car.png",
+      "sha256": "7b6e9966afe695e82e2febb91cf5bfc844ff451ad9f5195639a76f7caf767c5d"
     }
   ]
 }
