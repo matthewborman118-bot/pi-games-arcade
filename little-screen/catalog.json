@@ -73,6 +73,14 @@
       "file": "packs/mopar-or-no-car.msupack",
       "preview": "packs/mopar-or-no-car.png",
       "sha256": "7b6e9966afe695e82e2febb91cf5bfc844ff451ad9f5195639a76f7caf767c5d"
+    },
+    {
+      "id": "richardson-motors",
+      "name": "Richardson Motors",
+      "description": "A red Dodge and silver Ram under sweeping showroom lights, with Richardson Motors lettering and Cuba City, WI beneath.",
+      "file": "packs/richardson-motors.msupack",
+      "preview": "packs/richardson-motors.png",
+      "sha256": "9afa541aa7708d984e8d84369a23ad04fa3c9de8f980cc5046cdf474fed122d7"
     }
   ]
 }
