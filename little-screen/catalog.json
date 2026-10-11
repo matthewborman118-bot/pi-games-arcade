@@ -81,6 +81,70 @@
       "file": "packs/richardson-motors.msupack",
       "preview": "packs/richardson-motors.png",
       "sha256": "9afa541aa7708d984e8d84369a23ad04fa3c9de8f980cc5046cdf474fed122d7"
+    },
+    {
+      "id": "car-wash-chaos",
+      "name": "Car Wash Chaos",
+      "description": "A muddy orange truck gets spinning pink brushes, a screenful of soap, and a sparkling clean grin before the next splash.",
+      "file": "packs/car-wash-chaos.msupack",
+      "preview": "packs/car-wash-chaos.png",
+      "sha256": "dd962c381cf06be2f24353203968d2dfdb7d8b101ee10ce002e2592f2b19df7f"
+    },
+    {
+      "id": "cosmic-grease-monkey",
+      "name": "Cosmic Grease Monkey",
+      "description": "A big-eyed alien mechanic wrestles with a pumping V8, green coolant, and an unexpected blue-exhaust liftoff.",
+      "file": "packs/cosmic-grease-monkey.msupack",
+      "preview": "packs/cosmic-grease-monkey.png",
+      "sha256": "8166d419e4a0172f1dd5a156a54a11256e4d56c95002e9c5ca67b9a4f4b5a6ed"
+    },
+    {
+      "id": "supercharged-dodge",
+      "name": "Supercharged Dodge",
+      "description": "A red Dodge-inspired muscle car shakes its giant blower, spins the pulleys, and launches a fiery rev through a smoky neon garage.",
+      "file": "packs/supercharged-dodge.msupack",
+      "preview": "packs/supercharged-dodge.png",
+      "sha256": "a4c897a3992962a15b526ba542176f4c5f16c1a8ddeecd1e8077c75a13f25380"
+    },
+    {
+      "id": "dragon-behind-glass",
+      "name": "Dragon Behind the Glass",
+      "description": "A curious little dragon squishes its snout against the glass, sneezes a fiery puff, then wipes away its own soot.",
+      "file": "packs/dragon-behind-glass.msupack",
+      "preview": "packs/dragon-behind-glass.png",
+      "sha256": "19869fd758b08ffa9365d31877d61106425ad4f438ce0e3703fca265470b0d19"
+    },
+    {
+      "id": "shark-glass-inspector",
+      "name": "Shark Glass Inspector",
+      "description": "A friendly shark cruises through a reef, turns toward the glass, and plants a big squishy grin on it while tiny fish scatter.",
+      "file": "packs/shark-glass-inspector.msupack",
+      "preview": "packs/shark-glass-inspector.png",
+      "sha256": "a9d00904ab15c4060746ed1bc163a9dc6442779bdc21bb3fc071e549d9e38627"
+    },
+    {
+      "id": "orbital-cleanup",
+      "name": "Orbital Cleanup",
+      "description": "A cheerful space robot grabs floating junk, crushes it into a cube, and sends itself scooting backward with an overenthusiastic launch.",
+      "file": "packs/orbital-cleanup.msupack",
+      "preview": "packs/orbital-cleanup.png",
+      "sha256": "c26bd7aaec873a6555e48b2d9e47dfea96a6ec68a5a55a33aaca9c2037d85822"
+    },
+    {
+      "id": "phantom-garage",
+      "name": "Phantom Garage",
+      "description": "Two glowing ghost mechanics assemble a purple Dodge-inspired hot rod from floating parts, then send it rumbling into a cloud of purple smoke.",
+      "file": "packs/phantom-garage.msupack",
+      "preview": "packs/phantom-garage.png",
+      "sha256": "f96bac748b3b73447eda4b02f17a5c33441be10c31648f2ed9b25417f4ec97bf"
+    },
+    {
+      "id": "raccoon-pit-crew",
+      "name": "Raccoon Pit Crew",
+      "description": "Two masked mechanics tackle a tire change. One gets spun around inside the wheel while the other works the jack, then their tire makes a getaway.",
+      "file": "packs/raccoon-pit-crew.msupack",
+      "preview": "packs/raccoon-pit-crew.png",
+      "sha256": "566bc366318bd36ca8a79e90528e9fe92638842d376c5162b7fabf33954a7631"
     }
   ]
 }
