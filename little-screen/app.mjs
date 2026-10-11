@@ -1,13 +1,17 @@
-import {decodePack,encodePack,imageToPack,drawFrame} from './lib/pack.mjs';
+import {decodePack,encodePack,imageToPack,drawFrame,orientPack} from './lib/pack.mjs';
 import {MsuDevice,SerialTransport} from './lib/device.mjs';
 const $=id=>document.getElementById(id);
-const state={items:[],selected:null,pack:null,port:null,busy:false,paused:matchMedia('(prefers-reduced-motion: reduce)').matches,frame:0,selection:0};
+const state={items:[],selected:null,pack:null,port:null,busy:false,paused:matchMedia('(prefers-reduced-motion: reduce)').matches,frame:0,selection:0,rotation:0};
 let activeDevice=null;
 function message(text,error=false){$('message').textContent=text;$('message').className=error?'error':'success';}
 function controls(){
  const supported='serial' in navigator&&isSecureContext;
  $('connect').disabled=state.busy||!supported;$('flash').disabled=state.busy||!state.port||!state.pack;
  $('backup').disabled=state.busy||!state.port;$('download').disabled=!state.pack||state.busy;$('import-file').disabled=state.busy;
+ $('rotate').disabled=state.busy||!state.pack;
+ $('rotate').setAttribute('aria-pressed',String(state.rotation===180));
+ $('orientation').textContent=state.rotation===180?'Flipped 180°':'Original orientation';
+ $('hero-canvas').setAttribute('aria-label',`Animation preview, ${state.rotation===180?'flipped 180 degrees':'original orientation'}`);
  $('connect').textContent=state.port?'Choose another screen':'Connect a screen';
  $('connection-state').textContent=state.port?'MSU2 Mini selected · ready':'No screen selected';
  $('connection-dot').classList.toggle('connected',!!state.port);
@@ -38,7 +42,10 @@ async function select(item){
  $('selected-name').textContent=item.name;$('selected-description').textContent=item.description;$('hero-name').textContent=item.name;
  try{
   const pack=item.pack||await (async()=>{const response=await fetch(item.file);if(!response.ok)throw Error('This animation pack could not be downloaded.');return decodePack(await response.arrayBuffer());})();
-  if(selection!==state.selection)return;item.pack=pack;state.pack=pack;drawFrame($('hero-canvas'),pack.data,0);controls();
+  if(selection!==state.selection)return;item.pack=pack;
+  const oriented=await orientPack(pack,state.rotation);
+  if(selection!==state.selection)return;
+  state.pack=oriented;drawFrame($('hero-canvas'),oriented.data,0);controls();
  }catch(error){if(selection===state.selection){message(error.message,true);controls();}}
 }
 function progress(phase,value){$('progress-wrap').hidden=false;$('phase').textContent=phase;$('percent').textContent=Math.round(value*100)+'%';$('progress').value=value;}
@@ -61,7 +68,8 @@ $('flash').onclick=()=>{if(!state.pack||!state.port||state.busy)return;const pac
 $('backup').onclick=()=>{if(!state.port||state.busy)return;
  return withDevice(async device=>{progress('Saving current animation',0);const data=await device.backup(value=>progress('Saving current animation',value));const bytes=await encodePack(data,'Saved screen animation');download(bytes,'screen-backup.msupack');message('Your current animation was saved as a reusable pack.');});
 };
-$('download').onclick=()=>{if(state.pack)download(state.pack.bytes,safeName(state.selected.name)+'.msupack');};
+$('download').onclick=()=>{if(state.pack&&!state.busy)download(state.pack.bytes,safeName(state.selected.name)+(state.rotation===180?'-rotated-180':'')+'.msupack');};
+$('rotate').onclick=()=>{if(state.busy||!state.pack)return;state.rotation=state.rotation===0?180:0;return select(state.selected);};
 $('search').oninput=renderCards;$('pause').onclick=()=>{state.paused=!state.paused;controls();};
 $('import-file').onchange=async event=>{
  const file=event.target.files[0];if(!file||state.busy)return;
@@ -75,7 +83,7 @@ $('import-file').onchange=async event=>{
   item={name:pack.meta.name,description:'Your own animation, ready for a little screen.',preview:canvas.toDataURL(),pack,imported:true};state.items.unshift(item);
   $('import-message').textContent='Ready! Your animation is selected above. Download its pack to keep it or add it to the GitHub collection.';
  }catch(error){$('import-message').className='error';$('import-message').textContent=error.message;}
- finally{state.busy=false;event.target.value='';controls();renderCards();if(item){$('search').value='';await select(item);}}
+ finally{state.busy=false;event.target.value='';controls();renderCards();if(item){state.rotation=0;$('search').value='';await select(item);}}
 };
 navigator.serial?.addEventListener('disconnect',event=>{if(event.target===state.port){state.port=null;controls();if(!state.busy)message('Screen unplugged. Connect a screen to load another animation.');}});
 window.addEventListener('beforeunload',event=>{if(state.busy){event.preventDefault();event.returnValue='';}});

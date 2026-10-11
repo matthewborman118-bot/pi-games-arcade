@@ -3,3 +3,5 @@
 
 body.show-pixels .screen-bezel canvas,body.show-pixels .card-image{image-rendering:pixelated}
 .hero-caption{flex-wrap:wrap}.preview-note{text-align:center;font-size:10px;margin:10px 0 0}
+
+.orientation-control{margin-top:22px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}.orientation-control strong{font-size:12px;color:var(--green)}.orientation-control p{width:100%;margin:0}.orientation-control button[aria-pressed=true]{background:#d5e7d7;border-color:#6c9570}

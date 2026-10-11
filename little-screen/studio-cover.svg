@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="380" viewBox="0 0 900 380" role="img" aria-labelledby="title desc">
+<title id="title">Little Screen Studio</title><desc id="desc">A cheerful illuminated USB screen surrounded by stars and colorful animation frames.</desc>
+<defs>
+ <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#172844"/><stop offset="1" stop-color="#093c3b"/></linearGradient>
+ <linearGradient id="bezel" x2="0" y2="1"><stop stop-color="#60767a"/><stop offset=".2" stop-color="#2d424c"/><stop offset="1" stop-color="#132535"/></linearGradient>
+ <linearGradient id="display" x2="1" y2="1"><stop stop-color="#8df4d4"/><stop offset="1" stop-color="#35b9c2"/></linearGradient>
+ <linearGradient id="metal" x2="1" y2="1"><stop stop-color="#fbecbe"/><stop offset=".5" stop-color="#c6bd91"/><stop offset="1" stop-color="#887b59"/></linearGradient>
+ <radialGradient id="glow"><stop stop-color="#62ddca" stop-opacity=".35"/><stop offset="1" stop-color="#62ddca" stop-opacity="0"/></radialGradient>
+ <filter id="shadow" x="-30%" y="-50%" width="170%" height="220%"><feDropShadow dx="0" dy="18" stdDeviation="14" flood-color="#021324" flood-opacity=".65"/></filter>
+</defs>
+<path fill="url(#bg)" d="M0 0h900v380H0z"/><ellipse cx="457" cy="202" rx="380" ry="220" fill="url(#glow)"/>
+<g fill="none" stroke="#376273" stroke-width="1" opacity=".5"><path d="M0 300L320 0M140 380L540 0M400 380L800 0M630 380L900 120M0 80L900 280M0 230L760 380"/></g>
+<g transform="translate(159 60) rotate(-13 72 92)" filter="url(#shadow)"><rect width="146" height="180" rx="20" fill="#faab68"/><rect x="12" y="12" width="122" height="125" rx="12" fill="#522f55"/><path d="M35 96Q44 41 73 66Q106 34 116 98" fill="#a789e9"/><ellipse cx="64" cy="79" rx="8" ry="12" fill="#fff1d1"/><ellipse cx="91" cy="79" rx="8" ry="12" fill="#fff1d1"/><path d="M40 154h66" stroke="#a96e50" stroke-width="9" stroke-linecap="round"/></g>
+<g transform="translate(641 132) rotate(14 66 76)" filter="url(#shadow)"><rect width="132" height="159" rx="20" fill="#b798ef"/><rect x="11" y="11" width="110" height="104" rx="12" fill="#233d69"/><path d="M35 87l15-34 12 18 21-31 18 47" fill="#ffd277"/><path d="M30 134h65" stroke="#7660af" stroke-width="8" stroke-linecap="round"/></g>
+<g transform="rotate(-7 440 195)" filter="url(#shadow)">
+ <rect x="191" y="137" width="86" height="121" rx="9" fill="url(#metal)" stroke="#ddd5af" stroke-width="3"/>
+ <path d="M210 160h45v18h-45zm0 38h45v18h-45z" fill="#3f5056"/>
+ <rect x="254" y="86" width="390" height="219" rx="28" fill="url(#bezel)" stroke="#88a0a0" stroke-width="3"/>
+ <rect x="277" y="108" width="344" height="174" rx="15" fill="#0a2734"/>
+ <rect x="287" y="118" width="324" height="154" rx="10" fill="url(#display)"/>
+ <path d="M300 128h296" stroke="#d8fff1" stroke-width="3" opacity=".6"/>
+ <ellipse cx="391" cy="182" rx="28" ry="35" fill="#fff7df"/><ellipse cx="508" cy="182" rx="28" ry="35" fill="#fff7df"/>
+ <ellipse cx="398" cy="187" rx="12" ry="20" fill="#153b4d"/><ellipse cx="515" cy="187" rx="12" ry="20" fill="#153b4d"/>
+ <circle cx="402" cy="180" r="5" fill="white"/><circle cx="519" cy="180" r="5" fill="white"/>
+ <path d="M416 229q34 34 67-3" fill="#164653" stroke="#164653" stroke-width="7" stroke-linecap="round"/><path d="M428 230q24 12 42-2" fill="none" stroke="#fff1cf" stroke-width="6" stroke-linecap="round"/>
+ <ellipse cx="344" cy="215" rx="16" ry="8" fill="#65c4b6"/><ellipse cx="555" cy="215" rx="16" ry="8" fill="#65c4b6"/>
+ <rect x="644" y="160" width="38" height="76" rx="10" fill="#263e49"/><circle cx="661" cy="198" r="9" fill="#0b2030"/>
+</g>
+<g fill="#ffd27d"><path d="M122 92l8 20 21 8-21 8-8 21-8-21-21-8 21-8zM725 44l6 15 16 6-16 6-6 15-6-15-16-6 16-6z"/><circle cx="741" cy="313" r="5"/><circle cx="96" cy="252" r="4"/></g>
+<g fill="#8af0db"><path d="M784 139l5 12 13 5-13 5-5 13-5-13-12-5 12-5z"/><circle cx="258" cy="328" r="5"/><circle cx="649" cy="40" r="4"/></g>
+</svg>

@@ -17,6 +17,24 @@ export async function decodePack(input){
  const data=bytes.slice(12+length);if(await sha256(data)!==meta.sha256)throw Error('Animation checksum failed. Download the pack again.');
  return {meta,data,bytes};
 }
+// Reverse pixel positions inside each frame, preserving RGB565 byte order and time order.
+export function rotate180(data){
+ if(!(data instanceof Uint8Array)||data.length!==BYTE_LENGTH)throw Error('Rotation needs a complete 36-frame animation.');
+ const rotated=new Uint8Array(BYTE_LENGTH);
+ for(let f=0;f<FRAMES;f++){
+  const start=f*FRAME_BYTES;
+  for(let pixel=0;pixel<WIDTH*HEIGHT;pixel++){
+   const source=start+pixel*2,target=start+FRAME_BYTES-2-pixel*2;
+   rotated[target]=data[source];rotated[target+1]=data[source+1];
+  }
+ }
+ return rotated;
+}
+export async function orientPack(pack,degrees){
+ if(degrees===0)return pack;
+ if(degrees!==180)throw Error('Choose original or 180° orientation.');
+ return decodePack(await encodePack(rotate180(pack.data),pack.meta.name));
+}
 export function drawFrame(canvas,data,frame){
  const context=canvas.getContext('2d');const pixels=context.createImageData(WIDTH,HEIGHT);const offset=(frame%FRAMES)*FRAME_BYTES;
  for(let i=0;i<WIDTH*HEIGHT;i++){const p=(data[offset+i*2]<<8)|data[offset+i*2+1];pixels.data[i*4]=Math.round((p>>11)*255/31);pixels.data[i*4+1]=Math.round(((p>>5)&63)*255/63);pixels.data[i*4+2]=Math.round((p&31)*255/31);pixels.data[i*4+3]=255;}
