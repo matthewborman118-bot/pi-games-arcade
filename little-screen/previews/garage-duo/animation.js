@@ -1,3 +1,4 @@
+if(new URLSearchParams(location.search).get('scene')==='shark')location.replace('../shark-glass-inspector/');
 // Original canvas artwork, rendered at 3x and downsampled to the device's 160x80.
 const canvas=document.getElementById('display'),out=canvas.getContext('2d');
 const stage=document.createElement('canvas');stage.width=960;stage.height=480;

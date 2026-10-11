@@ -117,10 +117,10 @@
     {
       "id": "shark-glass-inspector",
       "name": "Shark Glass Inspector",
-      "description": "A friendly shark cruises through a reef, turns toward the glass, and plants a big squishy grin on it while tiny fish scatter.",
+      "description": "A richly shaded reef shark with a gentle tail sweep, fin strokes, a relaxed blink, and a friendly grin against the glass.",
       "file": "packs/shark-glass-inspector.msupack",
       "preview": "packs/shark-glass-inspector.png",
-      "sha256": "a9d00904ab15c4060746ed1bc163a9dc6442779bdc21bb3fc071e549d9e38627"
+      "sha256": "191ddf0877ad2a80205ef411e32f4f516c1b76a2607d70bd986997f8b7771fa4"
     },
     {
       "id": "orbital-cleanup",
@@ -145,6 +145,14 @@
       "file": "packs/raccoon-pit-crew.msupack",
       "preview": "packs/raccoon-pit-crew.png",
       "sha256": "566bc366318bd36ca8a79e90528e9fe92638842d376c5162b7fabf33954a7631"
+    },
+    {
+      "id": "shop-dog",
+      "name": "Shop Dog",
+      "description": "A Mopar shop bulldog beside a chrome V8. Blower plates open with the rev while the belt and pulleys turn and the bulldog blinks.",
+      "file": "packs/shop-dog.msupack",
+      "preview": "packs/shop-dog.png",
+      "sha256": "55375f3fe9fca196ab5e4dbf8b7c00987f3ac4e2e92261de0319e77a637b7dfb"
     }
   ]
 }
