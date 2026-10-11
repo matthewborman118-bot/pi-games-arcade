@@ -93,10 +93,10 @@
     {
       "id": "cosmic-grease-monkey",
       "name": "Cosmic Grease Monkey",
-      "description": "A big-eyed alien mechanic wrestles with a pumping V8, green coolant, and an unexpected blue-exhaust liftoff.",
+      "description": "A detailed alien mechanic with articulated arms, a ratcheting wrench, pumping pistons, rotating pulleys, and an engine that lifts off its stand.",
       "file": "packs/cosmic-grease-monkey.msupack",
       "preview": "packs/cosmic-grease-monkey.png",
-      "sha256": "8166d419e4a0172f1dd5a156a54a11256e4d56c95002e9c5ca67b9a4f4b5a6ed"
+      "sha256": "8922992bc8748b90fc4e1b9964a694b3c19ca057d2afead0d277a4e770f95ea7"
     },
     {
       "id": "supercharged-dodge",
