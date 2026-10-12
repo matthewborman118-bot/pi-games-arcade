@@ -141,10 +141,10 @@
     {
       "id": "raccoon-pit-crew",
       "name": "Raccoon Pit Crew",
-      "description": "Two masked mechanics tackle a tire change. One gets spun around inside the wheel while the other works the jack, then their tire makes a getaway.",
+      "description": "A richly illustrated raccoon mechanic works a ratcheting wrench and pumping jack while a runaway tire rolls through the garage.",
       "file": "packs/raccoon-pit-crew.msupack",
       "preview": "packs/raccoon-pit-crew.png",
-      "sha256": "566bc366318bd36ca8a79e90528e9fe92638842d376c5162b7fabf33954a7631"
+      "sha256": "5ae89853fff847c31877f87e6c7c62fd92f9509723c685534f56e1638cacb9c9"
     },
     {
       "id": "shop-dog",

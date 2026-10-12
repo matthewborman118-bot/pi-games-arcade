@@ -1,3 +1,4 @@
+if(new URLSearchParams(location.search).get('scene')==='raccoon')location.replace('../raccoon-pit-crew/');
 if(new URLSearchParams(location.search).get('scene')==='dragon')location.replace('../dragon-behind-glass/');
 if(new URLSearchParams(location.search).get('scene')==='wash')location.replace('../car-wash-chaos/');
 if(new URLSearchParams(location.search).get('scene')==='alien')location.replace('../cosmic-grease-monkey/');
@@ -124,4 +125,5 @@ document.getElementById('description').textContent=({wash:'Big brushes. Bigger b
 const nav=document.querySelector('nav');nav.replaceChildren();for(const [key,name] of Object.entries(names)){const link=document.createElement('a');link.href='?scene='+key;link.textContent=name;if(key===kind)link.setAttribute('aria-current','page');nav.append(link)}
 let paused=false,last=-1;document.getElementById('pause').onclick=()=>{paused=!paused;document.getElementById('pause').textContent=paused?'Play':'Pause'};document.getElementById('scrub').oninput=e=>{paused=true;document.getElementById('pause').textContent='Play';draw(Number(e.target.value)/10)};document.getElementById('pixels').onclick=()=>{canvas.style.imageRendering=canvas.style.imageRendering==='pixelated'?'auto':'pixelated'};
 window.renderFrame=draw;window.companionReady=true;draw(0);function tick(ms){const f=Math.floor(ms/100)%36;if(!paused&&f!==last){draw(f/10);document.getElementById('scrub').value=f;last=f}requestAnimationFrame(tick)}requestAnimationFrame(tick);
+
 
