@@ -1,3 +1,4 @@
+if(new URLSearchParams(location.search).get('scene')==='wash')location.replace('../car-wash-chaos/');
 if(new URLSearchParams(location.search).get('scene')==='alien')location.replace('../cosmic-grease-monkey/');
 if(new URLSearchParams(location.search).get('scene')==='shark')location.replace('../shark-glass-inspector/');
 // Original canvas artwork, rendered at 3x and downsampled to the device's 160x80.

@@ -53,7 +53,9 @@ async function withDevice(job){
  if(state.busy)return;state.busy=true;controls();renderCards();message('');let lock=null;
  try{
   try{lock=await navigator.wakeLock?.request('screen');}catch{}
-  activeDevice=new MsuDevice(new SerialTransport(state.port));await activeDevice.connect();await job(activeDevice);
+  progress('Connecting to screen',0);activeDevice=new MsuDevice(new SerialTransport(state.port));
+  try{await activeDevice.connect();}catch(error){throw Error('Connecting to screen: '+error.message);}
+  await job(activeDevice);
  }catch(error){message(error.message+(error.name==='NetworkError'?' Check the USB connection and close any other screen software.':''),true);state.port=null;}
  finally{await activeDevice?.close();activeDevice=null;await lock?.release().catch(()=>{});state.busy=false;controls();renderCards();}
 }

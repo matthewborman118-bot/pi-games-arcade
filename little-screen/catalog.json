@@ -85,10 +85,10 @@
     {
       "id": "car-wash-chaos",
       "name": "Car Wash Chaos",
-      "description": "A muddy orange truck gets spinning pink brushes, a screenful of soap, and a sparkling clean grin before the next splash.",
+      "description": "A detailed orange truck with spinning wash brushes, sweeping wipers, water spray, falling foam, and a sparkling clean reveal.",
       "file": "packs/car-wash-chaos.msupack",
       "preview": "packs/car-wash-chaos.png",
-      "sha256": "dd962c381cf06be2f24353203968d2dfdb7d8b101ee10ce002e2592f2b19df7f"
+      "sha256": "ea1434d384fc6a345e50913d677893adbc8b7bb79a8daa10bd2f9a4e9cffef93"
     },
     {
       "id": "cosmic-grease-monkey",
