@@ -109,10 +109,10 @@
     {
       "id": "dragon-behind-glass",
       "name": "Dragon Behind the Glass",
-      "description": "A curious little dragon squishes its snout against the glass, sneezes a fiery puff, then wipes away its own soot.",
+      "description": "A richly illustrated dragon with hinged wings, a moving jaw, a fiery sneeze, and a claw that wipes soot off the glass.",
       "file": "packs/dragon-behind-glass.msupack",
       "preview": "packs/dragon-behind-glass.png",
-      "sha256": "19869fd758b08ffa9365d31877d61106425ad4f438ce0e3703fca265470b0d19"
+      "sha256": "197c054239cde379587374b7e64145b6638fb25b5184ae60c2f623f9f0a61d5a"
     },
     {
       "id": "shark-glass-inspector",
